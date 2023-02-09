@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Выполняем 2 задание!"
+echo "Создаём 2 файла config и binary"
+touch config binary
+ls config binary
+echo "Создаём дерикторию app"
+mkdir -v app
+echo "Перемещаем файлы config и binary в дерикторию app"
+mv -v config binary app
+echo "Переходим в дерикторию app и создаём новый файл config.overwrite"
+cd app && touch config.overwrite
+echo "Создаём в дериктории app подпапки temp/info/users"
+mkdir -pv temp/info/users
+echo "Возврощаемся на уровень выше и удаляем дерикторию app со всем её содержимым"
+cd .. && rm -rvf app
+
+
+
+
