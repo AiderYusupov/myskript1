@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+echo "Выполняем 7 задание!"
+echo "Сортируем файл names.txt,выводим уникальное и сохроняем в новый файл names_sorted.txt"
+sort names.txt | uniq -c > names_sorted.txt
+cat names_sorted.txt
+echo "Дописываем в конец файла names_sorted.txt имена с файла names_new.txt"
+cat names_new.txt >> names_sorted.txt
+cat names_sorted.txt

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Переходим в дерикторию tmp"
+cd /tmp && pwd
+echo "Создаём пустой файл file.txt"
+touch file.txt
+echo "Скопируем file.txt в домашнюю дерикторию"
+cp -v file.txt /home/aider
+echo "Создадим копию файла file.txt которая будет называться txt.file"
+cp -v file.txt txt.file
+echo "Создадим дерикторию directory и переместим в неё файлы file.txt и txt.file"
+mkdir -v directory && mv -v file.txt txt.file directory
+echo "Создадим копию дериктории directory и назовём её next_directory"
+cp -av directory next_directory
+echo "Переименуем дерикторию next_directory в next"
+mv -v next_directory next
+echo "Удалим обе дериктории и всё их содержимое одной командой"
+rm -rvf directory next

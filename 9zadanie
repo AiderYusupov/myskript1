@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Выполняем 9 задание!"
+
+echo "Сжимаем файл names1.txt через tar и zip"
+
+tar cvf myTAR.tar names1.txt
+zip -v myZIP.zip names.txt
+echo "Создаём директорию unpack"
+mkdir -v unpack
+echo "Переносим наши архивы по очереди в директорию unpack"
+mv -v myTAR.tar unpack
+mv -v myZIP.zip unpack
+echo "Переходим в директорию unpack"
+cd unpack && pwd
+tar -xf myTAR.tar
+unzip myZIP.zip
+cd ..
+rm -rvf unpack

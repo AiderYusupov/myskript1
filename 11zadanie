@@ -1,0 +1,7 @@
+#!/bin/bash
+
+wget --version 1>> /dev/null 2>> /dev/null || sudo apt install wget -y
+curl --version 1>> /dev/null 2>> /dev/null || sudo apt install curl -y
+git --version 1>> /dev/null 2>> /dev/null || sudo apt install git -y
+jq --version 1>> /dev/null 2>> /dev/null || sudo apt install jq -y
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "В директори есть файл в котором написан список IP адресов, вычисли какой из них чаще всего повторяется (использовать файл ip_list)"
+echo "Найдём наш файл ip_list с помощью команды find"
+
+find / -name ip_list 2>> /dev/null
+
+echo "Переходим к файлу"
+
+cd /home/aider/devops-linux && pwd
+
+echo "Ищем ip адрес который чаще всего используется с помощью команд cut -d f | sort | uniq" 
+
+cut -d " " -f1 ip_list | sort -n | uniq -c | sort -n
+
+
+

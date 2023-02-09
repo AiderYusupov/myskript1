@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+
+echo "Ищем файл passwd с помощью команды find"
+
+find / -name passwd 2>> /dev/null
+echo "Перейдём к нему"
+cd /etc && pwd
+echo "Ищем в файле строку с именем моего пользователя"
+grep -i aider passwd 
+
+echo "passwd - это файл содержащий в текстовом формате список пользовательских учётных запсей"
