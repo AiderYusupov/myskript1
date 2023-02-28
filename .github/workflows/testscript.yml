@@ -12,9 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: run the script
-      run: chmod u+x ./*
-    - name: run the script
       run: |-
+        chmod u+x ./*
         ./zadanie
         ./2zadanie
         ./3zadanie
