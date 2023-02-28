@@ -2,10 +2,10 @@ name: my_testscript
 on: 
   push:
     branches:
-      - master
-  commit:
+      - main
+  pull_request:
     branches:
-      - master
+      - main
 jobs: 
   test:
     runs-on: ubuntu-latest
