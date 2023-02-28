@@ -19,7 +19,6 @@ jobs:
     steps:
     - name: run the script
       run: |-
-        ./zadanie
         ./2zadanie
         ./3zadanie
         ./4zadanie
