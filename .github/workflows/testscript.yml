@@ -9,8 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: run the script
-    
-    steps:
     - run: |-
         chmod u+x zadanie 2zadanie 3zadanie 4zadanie
         ./zadanie
