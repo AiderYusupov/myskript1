@@ -1,5 +1,6 @@
 name: my_testscript
 on: 
+  commit:
   push:
     branches:
       - master
