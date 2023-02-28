@@ -11,6 +11,8 @@ jobs:
     - name: run the script
 jobs:
   test2:
+    runs-on: ubuntu-latest
+    steps:
     - run: |-
         chmod u+x zadanie 2zadanie 3zadanie 4zadanie
         ./zadanie
